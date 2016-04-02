@@ -9,7 +9,11 @@ body {background-color: #CCC;}
     z-index:-1;
     opacity:1;
 }
-
+#form-container
+{
+  margin-top:20px;
+  padding:10px;
+}
 .greeting {
     color:black;
     text-shadow: 1px 1px 3px rgba(255,255,255, .5);

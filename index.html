@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <title>Your Moving Companion</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="bootstrap_comp/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap_comp/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="bootstrap_comp/css/bootstrap-social.css" rel="stylesheet">
 </head>
 <body>
+
+  <form class="form-inline" id="form-container">
+  <div class="form-group">
+    <label for="street">Street:</label>
+    <input type="text" class="form-control" id="street" value="">
+  </div>
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input type="text" class="form-control" id="city" value="">
+  </div>
+  <button type="submit" class="btn btn-default">Send Query</button>
+</form>
+<!--
     <form id="form-container" class="form-container">
         <label for="street">Street: </label><input type="text" id="street" value="">
         <label for="city">City: </label><input type="text" id="city" value="">
         <button id="submit-btn">Submit</button>
     </form>
+    !-->
     <hr>
     <h2 id="greeting" class="greeting">Where do you want to live?</h2>
     <div class="wikipedia-container">
