@@ -9,14 +9,14 @@ function loadData() {
     var $city = $("#city").val();
     var $street = $("#street").val();
     var $address = $street + ',' + $city;
-    var $streetURL = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ $address + "&key=AIzaSyC9qm5DPHuib0W51BzzxTQQ213Z-S1VE7s";
+    //var $streetURL = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ $address + "&key=AIzaSyC9qm5DPHuib0W51BzzxTQQ213Z-S1VE7s";
     var nytimes_url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + $city + "&sort=newest&api-key=68bec738e7fe8c08b0e254b12f4de74a:15:74774592";
     var wikimedia_url = "http://en.wikipedia.org/w/api.php?action=opensearch&search="+ $city +"&format=json";
     // clear out old data before new request
     $("#element").append("<h3> so you want to live in "+$address +"</h3>");
-    $wikiElem.text("");
-    $nytElem.text("");
-    $("body").append(" <img class='bgimg' src="+ $streetURL +"> ");
+    //$wikiElem.text("");
+    //$nytElem.text("");
+    //$("body").append(" <img class='bgimg' src="+ $streetURL +"> ");
     // load streetview
 
     // YOUR CODE GOES HERE!
@@ -40,7 +40,7 @@ function loadData() {
         //url: wikimedia_url,.
         dataType:"jsonp", //indicating that it is a jsonp request.
         // Tell jQuery we're expecting JSONP
-      
+
         //A function to be called if the request succeeds.
         // The function gets passed three arguments: The data returned from the server
         success: function( response ) {
