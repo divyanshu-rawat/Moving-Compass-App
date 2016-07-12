@@ -6,3 +6,7 @@ App will take advantage of freely accessible data in  applications, including ph
 
 API Used-Google Street view, Wikipedia and New York Times.
 Technologies Used- AJAX,JSON,J Query,JavaScript.
+
+
+
+![alt tag](https://github.com/divyanshu-rawat/Moving-Compass-App/blob/master/Screenshot%20from%202016-07-13%2000:03:06.png)
