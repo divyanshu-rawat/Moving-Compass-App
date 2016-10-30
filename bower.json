@@ -1,0 +1,21 @@
+{
+  "name": "Moving-Compass-App",
+  "homepage": "https://github.com/divyanshu-rawat/Moving-Compass-App",
+  "authors": [
+    "divyanshu <divyanshu.r46956@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
