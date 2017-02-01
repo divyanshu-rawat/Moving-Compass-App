@@ -11,7 +11,7 @@ function loadData() {
     var $address = $street + ',' + $city;
     //Removed Street View Request!!
     //var $streetURL = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location="+ $address + "&key=AIzaSyC9qm5DPHuib0W51BzzxTQQ213Z-S1VE7s";
-    var nytimes_url = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + $city + "&sort=newest&api-key=68bec738e7fe8c08b0e254b12f4de74a:15:74774592";
+    var nytimes_url = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + $city + "&sort=newest&api-key=68bec738e7fe8c08b0e254b12f4de74a:15:74774592";
     var wikimedia_url = "http://en.wikipedia.org/w/api.php?action=opensearch&search="+ $city +"&format=json";
     // clear out old data before new request
     $("#element").append("<h3> so you want to live in "+$address +"</h3>");
@@ -22,15 +22,15 @@ function loadData() {
 
     // YOUR CODE GOES HERE!
     $.getJSON(nytimes_url,function(data){
+      // console.log(JSON.stringify(data.response.docs.length));
+      var length = data.response.docs.length;
       $("#nytimes-header").text("New York Times Articles About " + $city );
-      var i=0;
-      while(true)
+      for(var i=0;i < length;i++)
       {
         var nyt_url = (data["response"].docs[i].web_url);
         var headline = (data.response.docs[i].headline.main);
         var article = (data.response.docs[i].lead_paragraph);
         $("#nytimes-articles").append("<li class='article'><a href=" + nyt_url + ">" + headline + "</a> <p>" + article + "</p></li>");
-        i++;
       }
     }).error(function(e){
         $("#nytimes-header").text("New York Times Articles could not be Loaded!");

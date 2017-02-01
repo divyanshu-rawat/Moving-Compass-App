@@ -6,38 +6,73 @@
       
       <link rel="stylesheet" href="css/style.css">
 
-      <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+            <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+      <!-- <link href="https://fonts.googleapis.com/css?family=Barrio" rel="stylesheet"> -->
+      <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
    </head>
    <body>
 
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
 
-      <div class="container">
-         <form class="form-inline" id="form-container">
-            <div class="form-group">
-               <label for="street">Street:</label>
-               <input type="text" class="form-control" id="street" value="">
+            <a class="navbar-brand" href="#">
+                      <!-- <span class="glyphicon glyphicon-apple" ></span> -->
+                      <i class="fa fa-apple" style="color:#5bdb48" aria-hidden="true"></i>
+            </a>
+
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+
+           <form class="form-inline" id="form-container" style="display:inline-block;">
+                  <div class="form-group has-feedback">
+                     <label for="street" class="label">Street:</label>
+                     <input type="text" class="form-control" id="street" value="">
+                     <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                  </div>
+                  <div class="form-group has-feedback">
+                     <label for="city" class="label">City:</label>
+                     <input type="text" class="form-control" id="city" value="">
+                     <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                  </div>
+                  <button type="submit" class="btn btn-primary" style="background:black;">Send Query</button>
+            </form>
+
+            <div class="navbar-right" style="margin:15px;">
+               <i class="fa fa-twitter" style="color:white;margin-right:10px;" aria-hidden="true"></i>
+               <i class="fa fa-facebook" style="color:white;" aria-hidden="true"></i>
             </div>
-            <div class="form-group">
-               <label for="city">City:</label>
-               <input type="text" class="form-control" id="city" value="">
-            </div>
-            <button type="submit" class="btn btn-default">Send Query</button>
-         </form>
-      </div>
-    
-      <hr>
-      <div class="container">
-         <h2 id="greeting" class="greeting">Where do you want to live?</h2>
-         <div class="wikipedia-container">
-            <h3 id="wikipedia-header">Relevant Wikipedia Links</h3>
-            <ul id="wikipedia-links"></ul>
-         </div>
-         <div class="nytimes-container">
-            <h3 id="nytimes-header">New York Times Articles</h3>
+
+          </div>
+        </div>
+      </nav>
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+         <h2 id="greeting" class="greeting font-class">Where do you want to live?</h2>
+         <div class="nytimes-container col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <h3 id="nytimes-header" class="font-class">New York Times Articles</h3>
             <ul id="nytimes-articles" class="article-list">
             </ul>
          </div>
+         <div class="wikipedia-container col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3 id="wikipedia-header" class="font-class">Relevant Wikipedia Links</h3>
+            <ul id="wikipedia-links"></ul>
+         </div>
+         
       </div>
 
 
