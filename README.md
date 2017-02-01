@@ -1,37 +1,50 @@
-### Moving-Compass
+### For Any Query Ping Me
 
-> A web app :sunglasses: that will help people :grey_question: learn about a place where they want :house: to move!
+[![Join the chat](https://img.shields.io/badge/gitter-join%20chat%20%E2%86%92-brightgreen.svg)](https://gitter.im/divyanshu001)
 
+##
 
 ### Description 
 * App will query the Google Street view, Wikipedia and New York Times APIs!
   App will take advantage of freely accessible data in  applications, including photo results, news articles and up-to-date     data about the world around us.
 
-> API Required  Google Street view, Wikipedia and New York Times.
+## 
 
+> API Used  Google Street view, Wikipedia and New York Times.
 
+##
 
 ### Installation Instructions :grey_exclamation:
 
-* clone or Download the repo. into any fresh temporary folder.
+* Clone or Download the repo. into any fresh temporary folder.
 
-* cd into that root folder you just cloned locally.
+* Cd into that root folder you just cloned locally.
 
 * launch index.html enjoy. 
 
 * I have attached screenshots below depicting various features of web app !
 
-
+##
 
 ### Package Manager Used 
 
 * Bower — A package manager for the web.
 
-### Dependencies
+##
 
-*  "bootstrap": "~3.3.7",  "jquery": "~3.1.1"
-*  "font-awesome": "~4.7.0" 
+### Contributing
 
+1. Create your **_branch_**: `git checkout -b my-new-feature`
+
+2. **_Commit_** your changes: `git commit -m 'Add some feature'`
+
+3. **_Push_** to the branch: `git push origin my-new-feature`
+
+4. Send a **Pull Request**
+
+5. **_Enjoy!_**
+
+##
 
 ### Examples !
 
