@@ -14,7 +14,7 @@
 
 ##
 
-### Installation Instructions :grey_exclamation:
+### Installation Instructions
 
 * Clone or Download the repo. into any fresh temporary folder.
 
