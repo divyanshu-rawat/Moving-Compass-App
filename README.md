@@ -10,7 +10,7 @@
 
 ## 
 
-> API Used  Google Street view, Wikipedia and New York Times.
+* API Used  Google Street view, Wikipedia and New York Times.
 
 ##
 
