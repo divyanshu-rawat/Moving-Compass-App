@@ -1,6 +1,6 @@
 ## Demo 
 
-> [Live Demo Here !](https://movingcompass.herokuapp.com/)
+> [Live Demo Here !](https://divyanshu-rawat.github.io/Moving-compass-app/)
 
 ##
 
