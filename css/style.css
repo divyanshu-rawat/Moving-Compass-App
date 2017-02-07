@@ -1,0 +1,63 @@
+* {box-sizing:border-box;}
+body 
+{
+    background-color: black !important;
+}
+
+.bgimg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    z-index:-1;
+    opacity:1;
+}
+#form-container
+{
+  margin:5px;
+}
+
+#wikipedia-links
+{
+    font-family: 'Dancing Script', cursive !important;
+    font-size:20px;
+}
+
+.greeting {
+    color:black;
+    text-shadow: 1px 1px 3px rgba(255,255,255, .5);
+    text-align: center;
+}
+
+h2,h3,h4
+{
+    color: white !important;
+}
+.label
+{
+    color: white;
+    font-family: 'Barrio', cursive !important;
+    font-size: 12px !important;
+}
+
+.font-class
+{
+        font-family: 'Tangerine', serif !important;
+        font-size:35px;
+}
+
+.article-list {
+    margin: 0;
+    padding: 0;
+    color: white !important;
+    font-family: 'Barrio', cursive !important;
+}
+
+.article {
+    list-style-type: none;
+    padding:10px;
+    border-top: 1px solid #CCC;
+}
+.article:first-child {
+    border-top:none;
+}
